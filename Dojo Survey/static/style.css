@@ -1,0 +1,9 @@
+*{
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.in{
+    display:flex;
+    flex-direction: column;
+}

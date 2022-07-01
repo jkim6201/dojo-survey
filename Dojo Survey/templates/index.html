@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <link rel='stylesheet' type='text/css' medi='screen' href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="form">
+    <form action="/process" method="POST">
+        <label for ="name">Your Name: </label>
+        <textarea name="name" cols="25" rows="1" class="form"></textarea>
+    </div>
+    <div class="lol">
+        <label for ="location">Dojo Location: </label>
+        <select name="location" class="loc">
+            <option value="">Select One</option>
+            <option value="Chicago">Chicago</option>
+            <option value="Burbank">Burank</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Online">Online</option>
+        </select>
+    </div>
+    <div class="wrapper">
+        <label for="language">Favorite Language: </label>
+        <select name="language" class="loc">
+            <option value="">Select One</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+        </select>
+    </div>
+    <div class="com">
+        <label for="comments">Comments(Optional)</label>
+    </div>
+    <div class="in">
+        <textarea name="comments" cols="50" rows="10" class="form"></textarea>
+        <input type="submit" value="Submit" class="btn">
+    </form>
+    </div>
+    
+</body>
+</html>
